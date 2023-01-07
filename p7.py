@@ -1,4 +1,7 @@
 # Calculating Loss with Categorical Cross-Entropy
+#     
+
+  
 import numpy as np
 import nnfs
 import cd
