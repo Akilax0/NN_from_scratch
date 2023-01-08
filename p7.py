@@ -1,7 +1,40 @@
 # Calculating Loss with Categorical Cross-Entropy
 #     
+# Metric for error
+# If only cared about accuracy 
+# Make attempts to optimiz using binary wont work
+# need a confidence score - probability
+# it would be helpful as the optimizer to adjust the weights and the 
+# biases
+# Mean absolute error - loss funcion (regression a value than a probability)
+# as more closer to the value less error
 
-  
+# Determining how wrong the value
+# For classification using softmx -> Categorical Cross-Entropy
+# 
+# One hot encoding
+# Have a vector of n classes long 
+# Have all zeros except at the target class where is 1
+# Classes : 3
+# Label : 1
+# One-hot : [0, 1, 0]
+
+# Natural log ln(x)
+# base: Euler's number e 
+# log generally solving x for 
+# e**x = b 
+
+
+# Example:
+# Classes : 3
+# Label: 0
+# One-hot: [1, 0, 0]
+# Prediction: [0.7, 0.1, 0.2]
+# L = - sigma(ylog(ypred)) = - ((1.log(0.7)) + (0.log(0.1)) + 0.(log(0.2)) )
+#   = 0.35667494393873245
+
+
+
 import numpy as np
 import nnfs
 import cd
